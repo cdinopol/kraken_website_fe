@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  web_fe:
+    build: .
+    command: >
+      sh -c "
+        nginx -g 'daemon off;'"
+    ports:
+      - "8001:8001"
