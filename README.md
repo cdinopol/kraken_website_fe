@@ -36,13 +36,15 @@ sudo systemctl restart apache2
 
 ## 5. Update apache default conf
 ```sh
-cp conf/host/web_fe.conf /etc/apache2/sites-available/web_fe.conf
+sudo cp conf/host/web_fe.conf /etc/apache2/sites-available/web_fe.conf
 sudo a2ensite web_fe.conf
+sudo systemctl reload apache2
 ```
 
 - disable default apache page (be cautious)
 ```sh
 sudo a2dissite 000-default.conf
+sudo systemctl reload apache2
 ```
 ## 6. Run server docker
 - to start
