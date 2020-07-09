@@ -10415,6 +10415,7 @@ section#download {
   background-image: url("../assets/img/section_bg_1.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 .footer {
   text-align: center;
