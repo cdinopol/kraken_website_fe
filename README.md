@@ -18,7 +18,7 @@ git clone https://github.com/cdinopol/kraken_website_fe.git
 
 ## 3. Install Docker
 ```sh
-cd ~/app/kraken_website_be/scripts
+cd ~/app/kraken_website_fe/scripts
 ./docker_install.sh
 ```
 
@@ -29,6 +29,7 @@ sudo a2enmod proxy
 sudo a2enmod proxy_http
 sudo a2enmod proxy_balancer
 sudo a2enmod lbmethod_byrequests
+sudo a2enmod ssl
 
 # retart apache
 sudo systemctl restart apache2
@@ -49,13 +50,13 @@ sudo systemctl reload apache2
 ## 6. Run server docker
 - to start
 ```sh
-cd ~/app/kraken_website_be/scripts
+cd ~/app/kraken_website_fe/scripts
 tmux_start.sh
 ```
 
 - to stop
 ```sh
-cd ~/app/kraken_website_be/scripts
+cd ~/app/kraken_website_fe/scripts
 tmux_stop.sh
 ```
 
@@ -64,11 +65,11 @@ tmux_stop.sh
 ## Additional notes:
 1. Create new sudo user (while on root)
 ```sh
-sudo adduser username
+sudo adduser kraken
 # note: password prompt will appear, always have a password!
 
 # add to sudo
-usermod -aG sudo username
+usermod -aG sudo kraken
 ```
 
 2. Disable sudo access
