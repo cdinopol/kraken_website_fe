@@ -1,3 +1,5 @@
 #!/bin/bash
 
-sudo tmux send-key -t kraken_web:web_fe C-c
+tmux send-key -t kraken_web:web_fe C-c
+sleep 5
+tmux send-key -t kraken_web:web_fe C-d
