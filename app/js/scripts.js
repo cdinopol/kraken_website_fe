@@ -55,29 +55,4 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
-
-
-    // Countdown
-    var cdd = new Date("Aug 1, 2020 12:00:00 GMT+00");
-    var countDownDate = new Date(cdd.getUTCFullYear(), cdd.getUTCMonth(), cdd.getUTCDate(), cdd.getUTCHours(), cdd.getUTCMinutes(), cdd.getUTCSeconds());
-    var x = setInterval(function() {
-        var now = new Date();
-        var nowx = new Date(now.getUTCFullYear(), now.getUTCMonth(), now.getUTCDate(), now.getUTCHours(), now.getUTCMinutes(), now.getUTCSeconds());
-        var distance = countDownDate - nowx;
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        
-        $("#opening_countdown").html(
-            days + "d " + 
-            hours + "h " +
-            minutes + "m " + 
-            seconds + "s"
-        );
-        if (distance < 0) {
-            clearInterval(x);
-            $("#coming_soon").html("WE ARE LIVE!");
-        }
-    }, 1000);
 })(jQuery); // End of use strict
