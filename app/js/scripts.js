@@ -55,4 +55,14 @@
     navbarCollapse();
     // Collapse the navbar when page is scrolled
     $(window).scroll(navbarCollapse);
+
+    // News - load more
+    $("div.news-entry").slice(0, 2).show();
+    $("#loadMore").on('click', function (e) {
+        e.preventDefault();
+        $("div.news-entry:hidden").slice(0, 2).slideDown();
+        if ($("div.news-entry:hidden").length == 0) {
+            $("#load").fadeOut('slow');
+        }
+    });
 })(jQuery); // End of use strict

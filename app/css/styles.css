@@ -10426,3 +10426,10 @@ section#download {
 .masthead a.btn {
   width: 13rem;
 }
+
+div.news-entry {
+  display:none;
+  margin-bottom: 5px;
+  background-color: #fff;
+  text-align: left;
+}
