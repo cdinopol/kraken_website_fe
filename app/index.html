@@ -12,7 +12,8 @@
         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+        <link href="css/styles.css?v=1.1" rel="stylesheet" />
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -138,8 +139,8 @@
             <div class="container">
                 <div class="row text-center">
                     <div class="col-12 col-xs-10 position-relative p-0">
-                        <img class="w-75" src="assets/img/starter_pack/player_packs.jpg" />
-                        <img class="position-absolute ember-frame" src="assets/img/starter_pack/ember_frame.png"/>
+                        <a data-fancybox="gallery" href="assets/img/starter_pack/player_packs.jpg"><img class="img-fluid w-75" src="assets/img/starter_pack/player_packs.jpg" /></a>
+                        <img class="img-fluid position-absolute ember-frame" src="assets/img/starter_pack/ember_frame.png"/>
                     </div>
                 </div>
                 <div class="text-center mt-5 col-12">
@@ -409,6 +410,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdn.jsdelivr.net/npm/jquery.easing@1.4.1/jquery.easing.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
