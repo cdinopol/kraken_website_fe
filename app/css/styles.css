@@ -10433,3 +10433,18 @@ div.news-entry {
   background-color: #fff;
   text-align: left;
 }
+
+section#freebies {
+  background-color: #212529;
+  background-image: url("../assets/img/section_bg_2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.ember-frame {
+  width: 98.4%;
+  left: -3.8%;
+  top: 40%;
+  pointer-events: none;
+}
